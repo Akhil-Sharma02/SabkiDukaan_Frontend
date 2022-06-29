@@ -15,16 +15,12 @@ const Navigation = (props) => {
     const isLoggedIn = props.isLoggedIn;
     const handleLogOut = async () => {
         const URL = url + "/logout";
-        console.log("in log out ", URL);
         await axios
             .get(URL, { withCredentials: true })
             .then((res) => {
-                console.log("Logged out");
-                console.log(res);
                 props.setUserOut();
             })
             .catch((err) => {
-                console.log("error Logged out");
                 console.log(err);
             });
         navigate("/login");

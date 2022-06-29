@@ -13,14 +13,10 @@ const MyProducts = () => {
         axios
             .get(URL, { withCredentials: true })
             .then((res) => {
-                console.log("get success");
-                console.log(res);
-                console.log(res.data.products);
                 setprods(res.data.products);
                 setPastProds(res.data.pastProducts);
             })
             .catch((err) => {
-                console.log("get error");
                 console.log(err);
                 navigate(err.response.data.redirectUrl);
             });

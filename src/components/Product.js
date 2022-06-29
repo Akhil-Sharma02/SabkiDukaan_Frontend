@@ -35,7 +35,6 @@ const Product = (props) => {
             .delete(URL, { withCredentials: true })
             .then((res) => {
                 navigate("/home");
-                console.log(res);
             })
             .catch((err) => {
                 console.log(err);
@@ -88,8 +87,6 @@ const Product = (props) => {
         });
     }, [socket]);
     useEffect(() => {
-        console.log("props", props);
-        console.log(currUser);
         if (props._id === "") {
             async function getUser() {
                 const URL = url + "/getuser";
@@ -98,8 +95,6 @@ const Product = (props) => {
                         withCredentials: true,
                     })
                     .then((res) => {
-                        console.log("if get success");
-                        console.log(res);
                         if (res.data !== "") {
                             let user = {
                                 _id: res.data._id,
@@ -107,12 +102,9 @@ const Product = (props) => {
                                 isLoggedIn: true,
                             };
                             setCurrUser(user);
-                            console.log("User after setting");
-                            console.log(currUser);
                         }
                     })
                     .catch((err) => {
-                        console.log("get error");
                         console.log(err);
                     });
             }
@@ -122,32 +114,21 @@ const Product = (props) => {
             const URL = url + "/product/" + id;
             await axios.get(URL).then((res) => {
                 setProduct(res.data);
-                console.log("res.data");
-                console.log(res.data);
                 if (res.data.bids.length > 0) {
                     let newarr = res.data.bids.slice();
                     setBids(newarr);
                 }
                 setMaxBid(res.data.maxBid);
-                console.log("before currUser");
-                console.log(currUser);
-                console.log(product);
             });
         }
         getProd();
     }, []);
-    // console.log("productt ", product);
-    // console.log("currUserr ", currUser);
     useEffect(() => {
-        console.log("######## IN THE EFFECT");
-        console.log(currUser);
-        console.log(product);
         if (
             currUser !== undefined &&
             product !== undefined &&
             currUser._id === product.byId
         ) {
-            console.log("2222Setting curruser true");
             setOwner(true);
         }
     }, [product, currUser]);

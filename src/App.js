@@ -32,7 +32,6 @@ const App = () => {
         setCurrUser(user);
     };
     const setUserOut = () => {
-        console.log("setting user out");
         setCurrUser(defUser);
     };
     useEffect(() => {
@@ -40,19 +39,13 @@ const App = () => {
         axios
             .get(URL, { withCredentials: true })
             .then((res) => {
-                console.log("gte success");
-                console.log(res);
-                console.log(res.data);
                 if (res.data != "") setCurrUser(res.data);
             })
             .catch((err) => {
-                console.log("get error");
                 console.log(err);
             });
     }, []);
     const isLoggedIn = currUser._id == "" ? false : true;
-    console.log("IsLoggedIN " + isLoggedIn);
-    console.log("currUser._id " + currUser._id);
     return (
         <div>
             <div className={styles.navDiv}>

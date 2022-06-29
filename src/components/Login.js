@@ -42,14 +42,11 @@ export const SignIn = (props) => {
                 { withCredentials: true }
             )
             .then((res) => {
-                console.log("Login success");
-                console.log(res);
                 usernameref.current.value = passwordref.current.value = "";
                 props.setUserIn(res.data);
                 navigate("/home");
             })
             .catch((err) => {
-                console.log("Error login");
                 setError(
                     <span className={styles.error}>
                         Username And/Or Password Is Incorrect
@@ -64,8 +61,6 @@ export const SignIn = (props) => {
     const goToSignUpHandler = () => {
         navigate("/register");
     };
-    console.log("flash here");
-    console.log(error);
     return (
         <div className={styles.mainDiv}>
             <div className={styles.loginDiv}>

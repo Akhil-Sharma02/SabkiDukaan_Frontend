@@ -11,8 +11,6 @@ const BidsWon = () => {
         axios
             .get(URL, { withCredentials: true })
             .then((res) => {
-                console.log("bids get success");
-                console.log(res);
                 res.data.map((bid) => {
                     setTotal((prevState) => {
                         return prevState + bid.price;
@@ -21,7 +19,6 @@ const BidsWon = () => {
                 setBids(res.data);
             })
             .catch((err) => {
-                console.log("get error");
                 console.log(err);
             });
     }, []);
@@ -30,7 +27,6 @@ const BidsWon = () => {
             <div className={styles.bidsWonDiv}>
                 <h2 className={styles.heading}>Bids Won</h2>
                 <div className={styles.productsDiv}>
-                    {console.log(bids)}
                     {bids.map((bid, idx) => {
                         return (
                             <div key={idx} className={styles.productDiv}>

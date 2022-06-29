@@ -23,8 +23,6 @@ export const SignUp = () => {
                 { withCredentials: true }
             )
             .then((res) => {
-                console.log("register success");
-                console.log(res);
                 if (res.data !== "") {
                     if (res.data.message !== undefined) {
                         setError(
@@ -46,7 +44,6 @@ export const SignUp = () => {
                 }
             })
             .catch((err) => {
-                console.log("register error");
                 console.log(err);
             });
     };

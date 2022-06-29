@@ -9,7 +9,6 @@ const PostProduct = (props) => {
     const imgref = useRef();
     const bidref = useRef();
     const handlePost = () => {
-        console.log("_id is ", props._id);
         const URL = url + "/postproduct";
         axios.post(
             URL,
