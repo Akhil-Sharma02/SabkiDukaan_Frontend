@@ -1,0 +1,139 @@
+/*TODO change product display from flex to grid */
+.homeDiv {
+    margin: 6rem 0;
+    /* border: 2px solid black; */
+}
+
+.productList {
+    /* border: 2px solid cyan; */
+    /* margin: 0 1rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(3, 33%); */
+    row-gap: 3rem;
+    list-style: none;
+    /* justify-content: space-between; */
+}
+
+.product {
+    /* width: 25rem; */
+    margin: 0;
+    /* margin: 1.5rem 3rem 1.5rem 3rem; */
+    height: 25rem;
+    /* border: 2px solid green; */
+}
+
+.productDiv {
+    margin: auto;
+    cursor: pointer;
+    background-color: #feeae3;
+    /* border: 2px solid cyan; */
+    height: 100%;
+    width: 70%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    color: black;
+    border-radius: 0.8rem;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.imageDiv {
+    width: 17rem;
+}
+
+.productImage {
+    width: 100%;
+}
+
+.nameDiv {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 1rem;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+    .productList {
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: repeat(2, 50%);
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .productList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product {
+        height: 15rem;
+    }
+    .imageDiv {
+        width: 10rem;
+    }
+    .productDiv {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .productList {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product {
+        height: 15rem;
+    }
+    .imageDiv {
+        width: 10rem;
+    }
+    .productDiv {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .productList {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product {
+        height: 15rem;
+    }
+    .imageDiv {
+        width: 10rem;
+    }
+    .productDiv {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imageDiv {
+        width: 6rem;
+    }
+    .productList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product {
+        height: 11rem;
+    }
+    .productDiv {
+        width: 70%;
+    }
+    .nameDiv {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .productList {
+        grid-template-columns: 1fr 1fr;
+    }
+    .productDiv {
+        width: 70%;
+    }
+}

@@ -1,0 +1,158 @@
+.mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 4rem);
+}
+
+.postDiv {
+    background-color: #121413;
+    color: white;
+    width: 30rem;
+    margin: 3rem;
+    padding: 3rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.nameLabel {
+    margin: 0.2rem;
+}
+
+.nameInput {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+}
+
+.descDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.descLabel {
+    margin: 0.2rem;
+}
+
+.descTextArea {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+    outline: none;
+    resize: none;
+    height: 5rem;
+    overflow: auto;
+}
+
+.imageDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.imageLabel {
+    margin: 0.2rem;
+}
+
+.imageInput {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+}
+
+.bidDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.bidLabel {
+    margin: 0.2rem;
+}
+
+.bidInput {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+}
+
+.errorDiv {
+    width: 80%;
+}
+
+.error {
+    margin: 0;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.submitBtn {
+    background-color: #fd6359;
+    color: white;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 1px 1px 10px 0px grey;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.orDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+
+.orDiv hr {
+    width: 40%;
+}
+
+.loginDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b5b5b;
+    font-size: 0.8rem;
+}
+
+.loginBtn {
+    border: none;
+    background-color: white;
+    color: #5b5b5b;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}

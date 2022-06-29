@@ -1,0 +1,122 @@
+.mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid blue;
+    min-height: calc(100vh - 4rem);
+}
+
+.loginDiv {
+    background-color: #121413;
+    color: white;
+    width: 30rem;
+    margin: 3rem;
+    padding: 3rem 1rem 3rem 1rem;
+    border-radius: 1rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usernameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.usernameLabel {
+    margin: 0.2rem;
+}
+
+.usernameInput {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+}
+
+.passwordDiv {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.passwordLabel {
+    margin: 0.2rem;
+}
+
+.passwordInput {
+    margin: 0.2rem;
+    padding: 0.4rem 0.4rem 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid grey;
+}
+
+.errorDiv {
+    width: 80%;
+}
+
+.error {
+    margin: 0;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.loginBtn {
+    background-color: #fd6359;
+    color: white;
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 1px 1px 10px 0px grey;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.orDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.orDiv hr {
+    width: 40%;
+    height: 1px;
+}
+
+.signUpDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.signUpBtn {
+    border: none;
+    background-color: #121413;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}

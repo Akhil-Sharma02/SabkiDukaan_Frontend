@@ -1,0 +1,9 @@
+.navDiv {
+    padding: 0;
+    display: flex;
+}
+
+.contentDiv {
+    height: 100%;
+    margin-top: 4rem;
+}
